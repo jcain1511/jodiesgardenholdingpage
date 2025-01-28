@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+.vine {
+  animation: growVine 2s ease-out forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes growVine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Add custom font for the title */
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* SVG color overrides */
+svg path[fill="#FF7F50"],
+svg path[stroke="#FF7F50"] {
+  fill: #e26016;
+  stroke: #e26016;
+}
+
+svg path[fill="#DDA0DD"] {
+  fill: #cb6ce6;
+}
+
+svg path[fill="#FFD700"] {
+  fill: #ffdd4d;
+}
+
+svg path[fill="#FFB6C1"] {
+  fill: #7dc6fa;
+}
